@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@nextui-org/table": "^2.0.33",
     "flowbite-react": "^0.9.0",
     "formik": "^2.4.6",
     "next": "14.2.3",
