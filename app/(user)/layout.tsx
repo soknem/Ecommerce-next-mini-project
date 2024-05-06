@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import "@/globals.css";
 import NavbarComponent from "@/components/navbar/NavbarComponent";
 import FooterComponent from "@/components/footer/FooterComponent";
+import SessionWrapper from "@/app/SessionProvider";
+import StoreProvider from "@/app/StoreProvider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -17,10 +19,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <NavbarComponent/>
-        {children}</body>
-        <FooterComponent/>
+      <SessionWrapper>
+        <body className={inter.className}>
+          <StoreProvider>
+            {/* Header */}
+            <header>
+              
+            </header>
+            {children}
+          </StoreProvider>
+          {/* Footer */}
+          <footer>{/* footer here */}</footer>
+        </body>
+      </SessionWrapper>
     </html>
   );
 }
