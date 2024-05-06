@@ -22,14 +22,10 @@ export default function RootLayout({
       <SessionWrapper>
         <body className={inter.className}>
           <StoreProvider>
-            {/* Header */}
-            <header>
-              
-            </header>
+              <NavbarComponent/>
             {children}
+            <FooterComponent/>
           </StoreProvider>
-          {/* Footer */}
-          <footer>{/* footer here */}</footer>
         </body>
       </SessionWrapper>
     </html>

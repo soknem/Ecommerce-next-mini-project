@@ -7,6 +7,7 @@ import {
   NavbarCollapse,
   NavbarLink,
   NavbarToggle,
+  Button
 } from "flowbite-react";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
@@ -47,7 +48,6 @@ function NavbarComponent() {
           ECOMCERCE
         </span>
       </NavbarBrand>
-      <NavbarToggle />
       <NavbarCollapse>
         {menu.map((item, index) => (
           <NavbarLink
@@ -59,6 +59,7 @@ function NavbarComponent() {
           >
             {item.name}
           </NavbarLink>
+
         ))}
       </NavbarCollapse>
     </Navbar>

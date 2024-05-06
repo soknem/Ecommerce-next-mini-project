@@ -13,7 +13,7 @@ export const customTheme: CustomFlowbiteTheme = {
         off: "",
       },
       inner: {
-        base: "mx-auto flex flex-wrap items-center  justify-between md:justify-start",
+        base: "mx-auto flex flex-wrap items-center justify-between",
         fluid: {
           on: "",
           off: "container",
