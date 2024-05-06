@@ -1,11 +1,10 @@
 'use client'
 
-import CardProduct from "@/components/card/CardProduct";
 import { useRouter } from "next/navigation";
 import {useGetProductsQuery} from "@/redux/service/product";
 import {useState} from "react";
 import { Product } from "@/libs/definition";
-import CardTestComponent from "./CardTestComponent";
+import CartProductComponent from "./CardProductComponent";
 
 
 const ProductPage = () => {
@@ -54,10 +53,9 @@ const ProductPage = () => {
 
                     <div className="mt-8 grid grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8">
                     {products.map((product) => (
-                            // <CardProduct onClick={() => router.push(`/product/${product.id}`)} key={product.id}
-                            //              image={product.image} name={product.name} id={product.id} price={product.price}
-                            //              seller={product.seller}/>
-                            <CardTestComponent key={product.id} name={product.name}/>
+                            <CartProductComponent onClick={() => router.push(`/product/${product.id}`)} key={product.id}
+                                         image={product.image} name={product.name}  price={product.price}
+                                         />
                             
                         ))}
 

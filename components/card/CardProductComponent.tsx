@@ -9,7 +9,7 @@ type PropsType = {
   price: number;
   onClick?: () => void;
 };
-function CartProductComponent({ name, image, price, onClick }: PropsType) {
+function CartProductComponent({name, image, price, onClick }: PropsType) {
   const router = useRouter();
   return (
     <Card
