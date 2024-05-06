@@ -7,7 +7,7 @@ import {
   NavbarCollapse,
   NavbarLink,
   NavbarToggle,
-  Button
+  Button,
 } from "flowbite-react";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
@@ -40,26 +40,27 @@ function NavbarComponent() {
     <Navbar theme={customTheme.navbar} className="sticky top-0 z-50">
       <NavbarBrand as={Link} href="/">
         <img
-          src="/istad logo.png"
-          className="mr-3 h-6 sm:h-9"
+          src="https://store.istad.co/media/product_images/shool_logo3.png"
+          className="mr-3 h-6 sm:h-9 text-2xl"
           alt="Flowbite React Logo"
         />
         <span className="self-center whitespace-nowrap text-xl font-semibold tracking-widest">
-          ECOMCERCE
+          ESA Store
         </span>
       </NavbarBrand>
+      <NavbarToggle />
       <NavbarCollapse>
         {menu.map((item, index) => (
           <NavbarLink
-          key={index}
+            key={index}
             onClick={() => updateMenuList(item.path)}
             as={Link}
             href={item.path}
             active={item.active}
+            className="text-xl"
           >
             {item.name}
           </NavbarLink>
-
         ))}
       </NavbarCollapse>
     </Navbar>
