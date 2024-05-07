@@ -21,8 +21,8 @@ export const { handlers: {GET, POST}, auth, signIn, signOut} = NextAuth({
 		// 				"Content-Type": "application/json",
 		// 			},
 		// 			body: JSON.stringify({
-		// 									email: "vannraruos@gmail.com",
-		// 									password: "Qwerty@123",
+		// 									email: "sokname56@gmail.com",
+		// 									password: "",
 		// 			}),
 		// 		});
 		// 		const res = await resp.json();

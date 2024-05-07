@@ -23,7 +23,7 @@ const metadata: Metadata = {
     description: "This is our policy page",
     openGraph: {
         type: "website",
-        url: "https://ecommerce.sovanra.me/policy",
+        url: "",
         title: "CSTAD Ecommerce - Policy",
         description: "This is our policy page",
         images: "https://www.istad.co/resources/img/CSTAD_120.png",

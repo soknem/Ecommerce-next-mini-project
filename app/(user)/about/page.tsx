@@ -23,7 +23,7 @@ const metadata: Metadata = {
     description: "Learn more about CSTAD Ecommerce and our mission.",
     openGraph: {
         type: "website",
-        url: "https://ecommerce.sovanra.me/about",
+        url: "",
         title: "CSTAD Ecommerce - About Us",
         description: "Learn more about CSTAD Ecommerce and our mission.",
         images: "https://www.istad.co/resources/img/CSTAD_120.png",
