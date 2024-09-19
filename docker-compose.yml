@@ -1,0 +1,14 @@
+version: '3'
+services:
+  soknem:
+    image: lms-admin
+    container_name: lms
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - 3000:3000
+    environment:
+      - NODE_ENV=production
+      - GENERATE_SOURCEMAP=false  
